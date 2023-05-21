@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "id": 1,
+            "message": "Changed hardrive on workstation 005",
+            "attention": false,
+            "date": "03-02-2023",
+            "tech": "John Doe"
+        },
+        {
+            "id": 2,
+            "message": "Changed hardrive on workstation 005",
+            "attention": true,
+            "date": "03-02-2023",
+            "tech": "John Doe"
+        }
+
+    ],
+    "techs": [
+        {
+            "id": 1,
+            "firstName": "John",
+            "lastName": "Doe"
+        }
+    ]
+}
