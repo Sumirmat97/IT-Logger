@@ -1,7 +1,7 @@
 import axios from "axios";
 import { GET_LOGS, ADD_LOG, LOGS_ERROR, SET_LOADING, DELETE_LOG, SET_CURRENT, CLEAR_CURRENT, UPDATE_LOG, SEARCH_LOGS } from "./types"
 
-// Get logs
+// Get logs from DB
 export const getLogs = () => async dispatch => {
     try {
         setLoading();
@@ -18,7 +18,7 @@ export const getLogs = () => async dispatch => {
     }
 }
 
-// Add new log
+// Add new log in DB
 export const addLog = (data) => async dispatch => {
     try {
         const headers = {
@@ -39,7 +39,7 @@ export const addLog = (data) => async dispatch => {
     }
 }
 
-// Delete a log
+// Delete a log from DB
 export const deleteLog = id => async dispatch => {
     try {
         setLoading();
@@ -56,7 +56,7 @@ export const deleteLog = id => async dispatch => {
     }
 }
 
-// Update a log
+// Update a log in DB
 export const updateLog = log => async dispatch => {
     const headers = {
         "Content-Type": "application/json"
@@ -107,7 +107,6 @@ export const clearCurrent = () => {
         type: CLEAR_CURRENT
     };
 }
-
 
 // Set loading to true
 export const setLoading = () => {
